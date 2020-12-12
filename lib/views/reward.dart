@@ -27,7 +27,7 @@ class RewardDetailsPage extends StatelessWidget {
       decoration: BoxDecoration(
         border: Border(
           bottom: BorderSide(
-            width: 1,
+            width: 0.2,
             color: Color(0x0D000000),
           ),
         ),
@@ -41,7 +41,6 @@ class RewardDetailsPage extends StatelessWidget {
               Text(
                 "Visited on $dateString",
                 style: TextStyle(
-                  color: Color(0xcc444242),
                   fontSize: 11,
                   fontFamily: "Avenir Next LT Pro",
                   fontWeight: FontWeight.w600,
@@ -51,7 +50,6 @@ class RewardDetailsPage extends StatelessWidget {
               Text(
                 "${visit.target - visit.points} points till ${visit.claim}",
                 style: TextStyle(
-                  color: Color(0x80444242),
                   fontSize: 13,
                   fontFamily: "Avenir Next LT Pro",
                 ),
@@ -67,7 +65,6 @@ class RewardDetailsPage extends StatelessWidget {
                   fontSize: 32,
                   fontFamily: "Avenir Next LT Pro",
                   fontWeight: FontWeight.w300,
-                  foreground: textGradient(context),
                   letterSpacing: 0.73,
                 ),
               );
@@ -96,17 +93,3 @@ class RewardDetailsPage extends StatelessWidget {
   }
 }
 
-Paint textGradient(BuildContext context) {
-  final RenderBox rb = context.findRenderObject();
-  return Paint()
-    ..shader = ui.Gradient.linear(
-      rb?.localToGlobal(rb.paintBounds.bottomLeft) ??
-          Offset.fromDirection(-0.25 * pi),
-      rb?.localToGlobal(rb.paintBounds.topRight) ??
-          Offset.fromDirection(0.75 * pi),
-      <Color>[
-        const Color(0xFF8B34A9),
-        const Color(0xFFF63669),
-      ],
-    );
-}

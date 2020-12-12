@@ -179,7 +179,7 @@ class _ChatRoomState extends State<ChatRoom> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  Text("Find Freelance Advisors",
+                  Text("Contact Other Users In The Area",
                       style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.w500,

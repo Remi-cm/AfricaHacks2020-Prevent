@@ -24,7 +24,7 @@ class LogoAndSlogan extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text("PISA",
+              Text("Prevent",
                   style: TextStyle(
                       fontSize: hv * 3.8,
                       fontWeight: FontWeight.w900)),
@@ -36,7 +36,7 @@ class LogoAndSlogan extends StatelessWidget {
             ],
           ),
         ),
-        Text("We all deserve comfort",
+        Text("Our safety is our duty",
             style: TextStyle(
                 fontSize: hv * 1.8,
                 fontWeight: FontWeight.w800)),

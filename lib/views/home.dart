@@ -124,7 +124,7 @@ class _HomeState extends State<Home> {
             SizedBox(
               width: 10,
             ),
-            Text("PISA Mobile", style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600,
+            Text("Prevent Mobile", style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600,
               color: themeProvider.mode == ThemeMode.light ? Colors.black54 : Colors.white),),
           ],
         ),
@@ -290,8 +290,8 @@ class _HomeState extends State<Home> {
           onTap: _changeIndex,
           items: [
             BottomNavigationBarItem(
-                icon: Icon(MdiIcons.hammerScrewdriver),
-                title: Text("Services")),
+                icon: Icon(MdiIcons.homeAccount),
+                title: Text("Home")),
             BottomNavigationBarItem(
                 icon: Icon(MdiIcons.chat), title: Text("Conversations")),
           ]),

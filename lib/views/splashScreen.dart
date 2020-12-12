@@ -103,15 +103,15 @@ class _SplashScreenState extends State<SplashScreen> {
                   children: <Widget>[
                     Column(
                       children: <Widget>[
-                        SizedBox(height: 100),
+                        SizedBox(height: 120),
                         CircleAvatar(
                           backgroundImage:
                               AssetImage("assets/images/pisaLogo.jpg"),
-                          radius: 55,
+                          radius: 70,
                         ),
                         SizedBox(height: 10),
                         Text(
-                          "We all deserve Comfort",
+                          "Our Safety is our Duty",
                           style: TextStyle(
                               fontSize: 15, fontWeight: FontWeight.bold),
                         )

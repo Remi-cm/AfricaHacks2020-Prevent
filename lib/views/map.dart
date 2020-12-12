@@ -429,12 +429,7 @@ class _MapPageState extends State<MapPage> {
                       child: IconButton(
                         icon: Icon(MdiIcons.chatOutline,
                             color: Theme.of(context).primaryColor),
-                        onPressed: () {
-                          Navigator.pushNamed(
-                            context,
-                            '/chats',
-                          );
-                        },
+                        onPressed: () {},
                         padding: EdgeInsets.all(10),
                         color: Theme.of(context).scaffoldBackgroundColor,
                         constraints:
@@ -460,12 +455,7 @@ class _MapPageState extends State<MapPage> {
                       child: IconButton(
                         icon: Icon(MdiIcons.accountMultipleOutline,
                             color: Theme.of(context).primaryColor),
-                        onPressed: () {
-                          Navigator.pushNamed(
-                            context,
-                            '/people',
-                          );
-                        },
+                        onPressed: () {},
                         padding: EdgeInsets.all(10),
                         color: Theme.of(context).scaffoldBackgroundColor,
                         constraints:

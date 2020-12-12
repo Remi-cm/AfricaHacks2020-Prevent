@@ -1,5 +1,6 @@
 import 'package:Prevent/views/incident.dart';
 import 'package:Prevent/views/reward.dart';
+import 'package:Prevent/views/users.dart';
 import 'package:flutter/material.dart';
 import 'views/appointment.dart';
 import 'views/home.dart';
@@ -52,6 +53,8 @@ class Routes {
         return MaterialPageRoute(builder: (context) => RewardDetailsPage());
       case '/incident':
         return MaterialPageRoute(builder: (context) => IncidentDetailsPage());
+      case '/users':
+        return MaterialPageRoute(builder: (context) => Users());
 
       default:
         return MaterialPageRoute(
